@@ -26,18 +26,18 @@ public class Main {
             System.out.println("Если скорость " + driverSpeed + ", то можно ездить спокойно");
         }
 
-        int vozrast = 25;
-        if (vozrast >= 2 && vozrast <= 6) {
-            System.out.println("Если возраст человека равен " + vozrast + ", то ему нужно ходить в детский сад");
+        int age3 = 25;
+        if (age3 >= 2 && age3 <= 6) {
+            System.out.println("Если возраст человека равен " + age3 + ", то ему нужно ходить в детский сад");
         }
-        if (vozrast >= 7 && vozrast <=17) {
-            System.out.println("Если возраст человека равен " + vozrast + ", то ему нужно ходить в школу");
+        if (age3 >= 7 && age3 <=17) {
+            System.out.println("Если возраст человека равен " + age3 + ", то ему нужно ходить в школу");
         }
-        if (vozrast >= 18 && vozrast <= 24) {
-            System.out.println("Если возраст человека равен " + vozrast + ", то его место в университете");
+        if (age3 >= 18 && age3 <= 24) {
+            System.out.println("Если возраст человека равен " + age3 + ", то его место в университете");
         }
-        else  {
-            System.out.println("Если возраст человека равен " + vozrast + ", то ему то ему пора ходить на работу");
+        if (age3 > 24) {
+            System.out.println("Если возраст человека равен " + age3 + ", то ему то ему пора ходить на работу");
         }
 
         int age2 = 14;
@@ -47,7 +47,7 @@ public class Main {
         if (age2 >= 5 && age2 < 14) {
             System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе в сопровождении взрослого");
         }
-        else {
+        if (age > 14) {
             System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
         }
 
@@ -60,7 +60,7 @@ public class Main {
         if (occupancy > seats && occupancy <= capacity) {
             System.out.println("В вагоне есть стоячие места");
         }
-        else {
+        if (occupancy > capacity) {
             System.out.println("Вагон уже забит полностью.");
         }
 
@@ -73,7 +73,7 @@ public class Main {
         if (two > one && two > three) {
             System.out.println(two);
         }
-        else {
+        if (three > one && three > two) {
             System.out.println(three);
         }
     }
